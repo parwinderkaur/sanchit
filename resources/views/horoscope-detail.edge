@@ -1,0 +1,634 @@
+@layout('layouts.master')
+
+@section('title')
+  Home Page
+@endsection
+
+@section('content')
+
+        <!-- title banner start -->
+        <div class="title-banner mb-80">
+            <div class="container-fluid">
+                <div class="banner-wrapper">
+                    <img class="br-32 w-100" src="/media/images/title-banner.jpg" alt="">
+                    <h2 class="wrapper-content">Horoscope</h2>
+                </div>
+            </div>
+        </div>
+        <!-- title banner End -->
+
+        <!-- Daily Horoscope Section Start -->
+        <section class="horoscope-detail-sec mb-96 wow fadeInUp" data-wow-delay="740ms">
+            <div class="container-fluid">
+                <div class="row row-gap-4">
+                    <div class="col-lg-9">
+                        <div class="d-flex align-items-center gap-24 mb-48">
+                            <div class="detail-icon">
+                                <img src="/media/horoscope/horoscope-detail-img-1.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="fw-400 mb-12">Aries Horoscope</h4>
+                                <p>March 21 - April 19</p>
+                            </div>
+                        </div>
+                        <ul class="nav nav-tabs mb-48" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="today-tab" data-bs-toggle="tab"
+                                    data-bs-target="#today" type="button" role="tab" aria-controls="today"
+                                    aria-selected="true">Today</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="tomorrow-tab" data-bs-toggle="tab"
+                                    data-bs-target="#tomorrow" type="button" role="tab" aria-controls="tomorrow"
+                                    aria-selected="false">Tomorrow</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="month-tab" data-bs-toggle="tab" data-bs-target="#month"
+                                    type="button" role="tab" aria-controls="month" aria-selected="false">This
+                                    Week</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="year-tab" data-bs-toggle="tab" data-bs-target="#year"
+                                    type="button" role="tab" aria-controls="year" aria-selected="false">This
+                                    Month</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="today" role="tabpanel"
+                                aria-labelledby="today-tab">
+                                <div>
+                                    <div class="per-circle-block mb-36">
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="20">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Love</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="40">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Career</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="60">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Money</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="70">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Health</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="80">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Business</h4>
+                                        </div>
+                                    </div>
+                                    <p class="mb-36">Minimalist decor focuses on simplicity, clean lines, and a
+                                        clutter-free
+                                        environment. We’ll discuss how to achieve this look with thoughtful furniture
+                                        choices, neutral colors, and functional yet stylish pieces that make your space
+                                        feel
+                                        calm and open. Minimalist decor focuses on simplicity, clean lines, and a
+                                        clutter-free environment. We’ll discuss how to achieve this look with thoughtful
+                                        furniture choices, neutral colors, and functional yet stylish pieces that make
+                                        your
+                                        space feel calm and open.</p>
+                                    <h6 class="fw-400 color-ter mb-12">Love</h6>
+                                    <p class="mb-36">Suscipit metus porttitor dapibus quam non velit imperdiet nunc. Leo
+                                        aliquam lacus feugiat eros semper vitae in sed sapien. Integer dolor lorem
+                                        sollicitudin in ultricies nunc. Id tempus nibh et rhoncus mauris. Porttitor et
+                                        tortor mattis nunc urna. Molestie natoque faucibus elit ullamcorper etiam vitae
+                                        quis
+                                        dolor. Proin pellentesque tristique id placerat a adipiscing purus auctor
+                                        ullamcorper. Morbi tellus mauris et lorem et elit tristique maecenas.</p>
+                                    <h6 class="fw-400 color-ter mb-12">Career</h6>
+                                    <p class="mb-36">Duis elementum sed laoreet turpis pellentesque tellus eget velit.
+                                        Odio
+                                        eleifend diam leo diam purus lacus. Lorem fermentum eget adipiscing sit. Egestas
+                                        sodales eu quam a tempus aliquam tristique sit. Enim sem malesuada quis in
+                                        commodo
+                                        cursus enim in. Orci cum sem ipsum nisl imperdiet bibendum sit. Pulvinar aenean
+                                        maecenas sed ornare eleifend. Consectetur nulla magna ipsum ornare id at non.
+                                    </p>
+                                    <h6 class="fw-400 color-ter mb-12">Money</h6>
+                                    <p class="mb-36">Purus nulla odio sit et id sollicitudin non. Eleifend dignissim sit
+                                        ut
+                                        sagittis nisl at enim dictum. Gravida sed sollicitudin id a in imperdiet
+                                        suscipit.
+                                        Aenean dui eget quam natoque vulputate ac quis dui. Pellentesque nunc consequat
+                                        morbi ultrices sit dolor faucibus platea. Donec amet velit natoque euismod
+                                        viverra
+                                        commodo feugiat. Consectetur faucibus non ac viverra id diam tristique. Ipsum
+                                        lectus
+                                        porttitor mattis donec donec ut odio.</p>
+                                    <h6 class="fw-400 color-ter mb-12">Business</h6>
+                                    <p class="mb-36">Massa sit elit arcu suspendisse. Nulla arcu integer a vestibulum
+                                        dictum
+                                        id a ultrices. Imperdiet euismod orci ac cras facilisi est leo velit et. Nulla
+                                        purus
+                                        eget non tincidunt viverra. Nec nisi eu viverra mi nunc. Condimentum libero amet
+                                        habitant suspendisse ridiculus habitant hac ipsum ac. Facilisi sodales sem a
+                                        rhoncus
+                                        blandit platea suspendisse libero nunc. Elementum tempus viverra ac sed in
+                                        blandit.
+                                    </p>
+                                    <h6 class="fw-400 color-ter mb-12">Health </h6>
+                                    <p class="">Volutpat eget non elit nec ut lectus et risus euismod. Odio sed augue
+                                        nunc
+                                        elit neque fusce malesuada. Laoreet vitae id vitae arcu sapien ac posuere. Enim
+                                        orci
+                                        congue ultricies laoreet ipsum in mauris montes. Viverra aenean faucibus eget eu
+                                        laoreet eget id velit. Eu nam arcu hendrerit enim. Nibh suscipit rutrum
+                                        consequat
+                                        nunc odio. Ultricies sed amet non tristique nec.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tomorrow" role="tabpanel" aria-labelledby="tomorrow-tab">
+                                <div>
+                                    <div class="per-circle-block mb-36">
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="60">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Money</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="40">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Career</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="70">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Health</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="20">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Love</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="80">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Business</h4>
+                                        </div>
+                                    </div>
+                                    <p class="mb-36">Minimalist decor focuses on simplicity, clean lines, and a
+                                        clutter-free
+                                        environment. We’ll discuss how to achieve this look with thoughtful furniture
+                                        choices, neutral colors, and functional yet stylish pieces that make your space
+                                        feel
+                                        calm and open. Minimalist decor focuses on simplicity, clean lines, and a
+                                        clutter-free environment. We’ll discuss how to achieve this look with thoughtful
+                                        furniture choices, neutral colors, and functional yet stylish pieces that make
+                                        your
+                                        space feel calm and open.</p>
+                                    <h6 class="fw-400 color-ter mb-12">Love</h6>
+                                    <p class="mb-36">Suscipit metus porttitor dapibus quam non velit imperdiet nunc. Leo
+                                        aliquam lacus feugiat eros semper vitae in sed sapien. Integer dolor lorem
+                                        sollicitudin in ultricies nunc. Id tempus nibh et rhoncus mauris. Porttitor et
+                                        tortor mattis nunc urna. Molestie natoque faucibus elit ullamcorper etiam vitae
+                                        quis
+                                        dolor. Proin pellentesque tristique id placerat a adipiscing purus auctor
+                                        ullamcorper. Morbi tellus mauris et lorem et elit tristique maecenas.</p>
+                                    <h6 class="fw-400 color-ter mb-12">Career</h6>
+                                    <p class="mb-36">Duis elementum sed laoreet turpis pellentesque tellus eget velit.
+                                        Odio
+                                        eleifend diam leo diam purus lacus. Lorem fermentum eget adipiscing sit. Egestas
+                                        sodales eu quam a tempus aliquam tristique sit. Enim sem malesuada quis in
+                                        commodo
+                                        cursus enim in. Orci cum sem ipsum nisl imperdiet bibendum sit. Pulvinar aenean
+                                        maecenas sed ornare eleifend. Consectetur nulla magna ipsum ornare id at non.
+                                    </p>
+                                    <h6 class="fw-400 color-ter mb-12">Money</h6>
+                                    <p class="mb-36">Purus nulla odio sit et id sollicitudin non. Eleifend dignissim sit
+                                        ut
+                                        sagittis nisl at enim dictum. Gravida sed sollicitudin id a in imperdiet
+                                        suscipit.
+                                        Aenean dui eget quam natoque vulputate ac quis dui. Pellentesque nunc consequat
+                                        morbi ultrices sit dolor faucibus platea. Donec amet velit natoque euismod
+                                        viverra
+                                        commodo feugiat. Consectetur faucibus non ac viverra id diam tristique. Ipsum
+                                        lectus
+                                        porttitor mattis donec donec ut odio.</p>
+                                    <h6 class="fw-400 color-ter mb-12">Business</h6>
+                                    <p class="mb-36">Massa sit elit arcu suspendisse. Nulla arcu integer a vestibulum
+                                        dictum
+                                        id a ultrices. Imperdiet euismod orci ac cras facilisi est leo velit et. Nulla
+                                        purus
+                                        eget non tincidunt viverra. Nec nisi eu viverra mi nunc. Condimentum libero amet
+                                        habitant suspendisse ridiculus habitant hac ipsum ac. Facilisi sodales sem a
+                                        rhoncus
+                                        blandit platea suspendisse libero nunc. Elementum tempus viverra ac sed in
+                                        blandit.
+                                    </p>
+                                    <h6 class="fw-400 color-ter mb-12">Health </h6>
+                                    <p class="">Volutpat eget non elit nec ut lectus et risus euismod. Odio sed augue
+                                        nunc
+                                        elit neque fusce malesuada. Laoreet vitae id vitae arcu sapien ac posuere. Enim
+                                        orci
+                                        congue ultricies laoreet ipsum in mauris montes. Viverra aenean faucibus eget eu
+                                        laoreet eget id velit. Eu nam arcu hendrerit enim. Nibh suscipit rutrum
+                                        consequat
+                                        nunc odio. Ultricies sed amet non tristique nec.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="month" role="tabpanel" aria-labelledby="month-tab">
+                                <div>
+                                    <div class="per-circle-block mb-36">
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="90">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Love</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="80">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Career</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="70">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Money</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="60">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Health</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="50">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Business</h4>
+                                        </div>
+                                    </div>
+                                    <p class="mb-36">Minimalist decor focuses on simplicity, clean lines, and a
+                                        clutter-free
+                                        environment. We’ll discuss how to achieve this look with thoughtful furniture
+                                        choices, neutral colors, and functional yet stylish pieces that make your space
+                                        feel
+                                        calm and open. Minimalist decor focuses on simplicity, clean lines, and a
+                                        clutter-free environment. We’ll discuss how to achieve this look with thoughtful
+                                        furniture choices, neutral colors, and functional yet stylish pieces that make
+                                        your
+                                        space feel calm and open.</p>
+                                    <h6 class="fw-400 color-ter mb-12">Love</h6>
+                                    <p class="mb-36">Suscipit metus porttitor dapibus quam non velit imperdiet nunc. Leo
+                                        aliquam lacus feugiat eros semper vitae in sed sapien. Integer dolor lorem
+                                        sollicitudin in ultricies nunc. Id tempus nibh et rhoncus mauris. Porttitor et
+                                        tortor mattis nunc urna. Molestie natoque faucibus elit ullamcorper etiam vitae
+                                        quis
+                                        dolor. Proin pellentesque tristique id placerat a adipiscing purus auctor
+                                        ullamcorper. Morbi tellus mauris et lorem et elit tristique maecenas.</p>
+                                    <h6 class="fw-400 color-ter mb-12">Career</h6>
+                                    <p class="mb-36">Duis elementum sed laoreet turpis pellentesque tellus eget velit.
+                                        Odio
+                                        eleifend diam leo diam purus lacus. Lorem fermentum eget adipiscing sit. Egestas
+                                        sodales eu quam a tempus aliquam tristique sit. Enim sem malesuada quis in
+                                        commodo
+                                        cursus enim in. Orci cum sem ipsum nisl imperdiet bibendum sit. Pulvinar aenean
+                                        maecenas sed ornare eleifend. Consectetur nulla magna ipsum ornare id at non.
+                                    </p>
+                                    <h6 class="fw-400 color-ter mb-12">Money</h6>
+                                    <p class="mb-36">Purus nulla odio sit et id sollicitudin non. Eleifend dignissim sit
+                                        ut
+                                        sagittis nisl at enim dictum. Gravida sed sollicitudin id a in imperdiet
+                                        suscipit.
+                                        Aenean dui eget quam natoque vulputate ac quis dui. Pellentesque nunc consequat
+                                        morbi ultrices sit dolor faucibus platea. Donec amet velit natoque euismod
+                                        viverra
+                                        commodo feugiat. Consectetur faucibus non ac viverra id diam tristique. Ipsum
+                                        lectus
+                                        porttitor mattis donec donec ut odio.</p>
+                                    <h6 class="fw-400 color-ter mb-12">Business</h6>
+                                    <p class="mb-36">Massa sit elit arcu suspendisse. Nulla arcu integer a vestibulum
+                                        dictum
+                                        id a ultrices. Imperdiet euismod orci ac cras facilisi est leo velit et. Nulla
+                                        purus
+                                        eget non tincidunt viverra. Nec nisi eu viverra mi nunc. Condimentum libero amet
+                                        habitant suspendisse ridiculus habitant hac ipsum ac. Facilisi sodales sem a
+                                        rhoncus
+                                        blandit platea suspendisse libero nunc. Elementum tempus viverra ac sed in
+                                        blandit.
+                                    </p>
+                                    <h6 class="fw-400 color-ter mb-12">Health </h6>
+                                    <p class="">Volutpat eget non elit nec ut lectus et risus euismod. Odio sed augue
+                                        nunc
+                                        elit neque fusce malesuada. Laoreet vitae id vitae arcu sapien ac posuere. Enim
+                                        orci
+                                        congue ultricies laoreet ipsum in mauris montes. Viverra aenean faucibus eget eu
+                                        laoreet eget id velit. Eu nam arcu hendrerit enim. Nibh suscipit rutrum
+                                        consequat
+                                        nunc odio. Ultricies sed amet non tristique nec.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="year" role="tabpanel" aria-labelledby="year-tab">
+                                <div>
+                                    <div class="per-circle-block mb-36">
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="20">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Love</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="40">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Career</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="60">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Money</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="70">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Health</h4>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="circle_percent mb-16" data-percent="80">
+                                                <div class="circle_inner">
+                                                    <div class="round_per"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="fw-400">Business</h4>
+                                        </div>
+                                    </div>
+                                    <p class="mb-36">Minimalist decor focuses on simplicity, clean lines, and a
+                                        clutter-free
+                                        environment. We’ll discuss how to achieve this look with thoughtful furniture
+                                        choices, neutral colors, and functional yet stylish pieces that make your space
+                                        feel
+                                        calm and open. Minimalist decor focuses on simplicity, clean lines, and a
+                                        clutter-free environment. We’ll discuss how to achieve this look with thoughtful
+                                        furniture choices, neutral colors, and functional yet stylish pieces that make
+                                        your
+                                        space feel calm and open.</p>
+                                    <h6 class="fw-400 color-ter mb-12">Love</h6>
+                                    <p class="mb-36">Suscipit metus porttitor dapibus quam non velit imperdiet nunc. Leo
+                                        aliquam lacus feugiat eros semper vitae in sed sapien. Integer dolor lorem
+                                        sollicitudin in ultricies nunc. Id tempus nibh et rhoncus mauris. Porttitor et
+                                        tortor mattis nunc urna. Molestie natoque faucibus elit ullamcorper etiam vitae
+                                        quis
+                                        dolor. Proin pellentesque tristique id placerat a adipiscing purus auctor
+                                        ullamcorper. Morbi tellus mauris et lorem et elit tristique maecenas.</p>
+                                    <h6 class="fw-400 color-ter mb-12">Career</h6>
+                                    <p class="mb-36">Duis elementum sed laoreet turpis pellentesque tellus eget velit.
+                                        Odio
+                                        eleifend diam leo diam purus lacus. Lorem fermentum eget adipiscing sit. Egestas
+                                        sodales eu quam a tempus aliquam tristique sit. Enim sem malesuada quis in
+                                        commodo
+                                        cursus enim in. Orci cum sem ipsum nisl imperdiet bibendum sit. Pulvinar aenean
+                                        maecenas sed ornare eleifend. Consectetur nulla magna ipsum ornare id at non.
+                                    </p>
+                                    <h6 class="fw-400 color-ter mb-12">Money</h6>
+                                    <p class="mb-36">Purus nulla odio sit et id sollicitudin non. Eleifend dignissim sit
+                                        ut
+                                        sagittis nisl at enim dictum. Gravida sed sollicitudin id a in imperdiet
+                                        suscipit.
+                                        Aenean dui eget quam natoque vulputate ac quis dui. Pellentesque nunc consequat
+                                        morbi ultrices sit dolor faucibus platea. Donec amet velit natoque euismod
+                                        viverra
+                                        commodo feugiat. Consectetur faucibus non ac viverra id diam tristique. Ipsum
+                                        lectus
+                                        porttitor mattis donec donec ut odio.</p>
+                                    <h6 class="fw-400 color-ter mb-12">Business</h6>
+                                    <p class="mb-36">Massa sit elit arcu suspendisse. Nulla arcu integer a vestibulum
+                                        dictum
+                                        id a ultrices. Imperdiet euismod orci ac cras facilisi est leo velit et. Nulla
+                                        purus
+                                        eget non tincidunt viverra. Nec nisi eu viverra mi nunc. Condimentum libero amet
+                                        habitant suspendisse ridiculus habitant hac ipsum ac. Facilisi sodales sem a
+                                        rhoncus
+                                        blandit platea suspendisse libero nunc. Elementum tempus viverra ac sed in
+                                        blandit.
+                                    </p>
+                                    <h6 class="fw-400 color-ter mb-12">Health </h6>
+                                    <p class="">Volutpat eget non elit nec ut lectus et risus euismod. Odio sed augue
+                                        nunc
+                                        elit neque fusce malesuada. Laoreet vitae id vitae arcu sapien ac posuere. Enim
+                                        orci
+                                        congue ultricies laoreet ipsum in mauris montes. Viverra aenean faucibus eget eu
+                                        laoreet eget id velit. Eu nam arcu hendrerit enim. Nibh suscipit rutrum
+                                        consequat
+                                        nunc odio. Ultricies sed amet non tristique nec.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="horoscope-block mb-16">
+                            <img src="/media/horoscope/horoscope-detail-img-2.png" alt="">
+                            <div>
+                                <a href="#" class="h6 fw-400 hover-content mb-12">Aries Horoscope</a>
+                                <p class="subtitle text-decoration-underline">March 21 - April 19</p>
+                            </div>
+                        </div>
+                        <div class="horoscope-block mb-16">
+                            <img src="/media/horoscope/horoscope-detail-img-3.png" alt="">
+                            <div>
+                                <a href="#" class="h6 fw-400 hover-content mb-12">Taurus Horoscope</a>
+                                <p class="subtitle text-decoration-underline">March 21 - April 19</p>
+                            </div>
+                        </div>
+                        <div class="horoscope-block mb-16">
+                            <img src="/media/horoscope/horoscope-detail-img-4.png" alt="">
+                            <div>
+                                <a href="#" class="h6 fw-400 hover-content mb-12">Gemini Horoscope</a>
+                                <p class="subtitle text-decoration-underline">March 21 - April 19</p>
+                            </div>
+                        </div>
+                        <div class="horoscope-block mb-16">
+                            <img src="/media/horoscope/horoscope-detail-img-5.png" alt="">
+                            <div>
+                                <a href="#" class="h6 fw-400 hover-content mb-12">Cancer Horoscope</a>
+                                <p class="subtitle text-decoration-underline">March 21 - April 19</p>
+                            </div>
+                        </div>
+                        <div class="horoscope-block mb-16">
+                            <img src="/media/horoscope/horoscope-detail-img-6.png" alt="">
+                            <div>
+                                <a href="#" class="h6 fw-400 hover-content mb-12">Aries Horoscope</a>
+                                <p class="subtitle text-decoration-underline">March 21 - April 19</p>
+                            </div>
+                        </div>
+                        <div class="horoscope-block mb-16">
+                            <img src="/media/horoscope/horoscope-detail-img-7.png" alt="">
+                            <div>
+                                <a href="#" class="h6 fw-400 hover-content mb-12">Leo Horoscope</a>
+                                <p class="subtitle text-decoration-underline">March 21 - April 19</p>
+                            </div>
+                        </div>
+                        <div class="horoscope-block mb-16">
+                            <img src="/media/horoscope/horoscope-detail-img-8.png" alt="">
+                            <div>
+                                <a href="#" class="h6 fw-400 hover-content mb-12">Virgo Horoscope</a>
+                                <p class="subtitle text-decoration-underline">March 21 - April 19</p>
+                            </div>
+                        </div>
+                        <div class="horoscope-block mb-16">
+                            <img src="/media/horoscope/horoscope-detail-img-9.png" alt="">
+                            <div>
+                                <a href="#" class="h6 fw-400 hover-content mb-12">Libra Horoscope</a>
+                                <p class="subtitle text-decoration-underline">March 21 - April 19</p>
+                            </div>
+                        </div>
+                        <div class="horoscope-block mb-16">
+                            <img src="/media/horoscope/horoscope-detail-img-10.png" alt="">
+                            <div>
+                                <a href="#" class="h6 fw-400 hover-content mb-12">Scorpio Horoscope</a>
+                                <p class="subtitle text-decoration-underline">March 21 - April 19</p>
+                            </div>
+                        </div>
+                        <div class="horoscope-block mb-16">
+                            <img src="/media/horoscope/horoscope-detail-img-5.png" alt="">
+                            <div>
+                                <a href="#" class="h6 fw-400 hover-content mb-12">Cancer Horoscope</a>
+                                <p class="subtitle text-decoration-underline">March 21 - April 19</p>
+                            </div>
+                        </div>
+                        <div class="horoscope-block">
+                            <img src="/media/horoscope/horoscope-detail-img-7.png" alt="">
+                            <div>
+                                <a href="#" class="h6 fw-400 hover-content mb-12">Leo Horoscope</a>
+                                <p class="subtitle text-decoration-underline">March 21 - April 19</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Daily Horoscope Section End -->
+
+        <!-- Blog Section Start -->
+        <section class="blog-sec mb-80 wow fadeInUp" data-wow-delay="690ms">
+            <div class="container-fluid">
+                <div class="heading mb-36">
+                    <div>
+                        <p class="color-sec mb-4p">See what new about your day!</p>
+                        <h3 class="fw-500">Our Latest Insights</h3>
+                    </div>
+                    <a href="{{ route('blogs') }}" class="cus-btn">
+                        <span class="text">View All</span>
+                    </a>
+                </div>
+                <div class="row row-gap-4">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-card">
+                            <a href="{{ route('blog-detail') }}" class="card-img">
+                                <img src="/media/blogs/blog-1.jpg" alt="">
+                            </a>
+                            <div class="card-content">
+                                <p class="white mb-4p">June 01, 2025</p>
+                                <a href="{{ route('blog-detail') }}" class="fw-700 h5 mb-12">Personal Palm Reading</a>
+                                <p class="light-gray mb-20">Lectus nisi quam tellus in eu elementum. Tempus lorem arcu
+                                    quis diam at.
+                                    Massa lacus at
+                                    morbi vel curabitur sed vitae.</p>
+                                <div class="text-end">
+                                    <a href="{{ route('blog-detail') }}"
+                                        class="text-18 hover-content text-decoration-underline">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-card">
+                            <a href="{{ route('blog-detail') }}" class="card-img">
+                                <img src="/media/blogs/blog-2.jpg" alt="blog-2.jpg">
+                            </a>
+                            <div class="card-content">
+                                <p class="white mb-4p">June 03, 2025</p>
+                                <a href="{{ route('blog-detail') }}" class="fw-700 h5 mb-12">Cosmic Insight Chronicles</a>
+                                <p class="light-gray mb-20">Aries individuals are known for their energetic and
+                                    assertive nature, making
+                                    bold and dynamic outfits a perfect match.
+                                </p>
+                                <div class="text-end">
+                                    <a href="{{ route('blog-detail') }}"
+                                        class="text-18 hover-content text-decoration-underline">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-card">
+                            <a href="{{ route('blog-detail') }}" class="card-img">
+                                <img src="/media/blogs/blog-3.jpg" alt="">
+                            </a>
+                            <div class="card-content">
+                                <p class="white mb-4p">June 03, 2025</p>
+                                <a href="{{ route('blog-detail') }}" class="fw-700 h5 mb-12">Self-Growth with Astrology</a>
+                                <p class="light-gray mb-20">Incorporate astrology into everyday activities, from
+                                    planning your day
+                                    around the moon phase to using planetary.</p>
+                                <div class="text-end">
+                                    <a href="{{ route('blog-detail') }}"
+                                        class="text-18 hover-content text-decoration-underline">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section End -->
+        @endsection

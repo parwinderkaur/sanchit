@@ -1,0 +1,111 @@
+@layout('layouts.admin-master')
+
+@section('title')
+  Admin Services
+@endsection
+
+@section('content')      
+                <!-- begin app-main -->
+                <div class="app-main" id="main">
+                    <!-- begin container-fluid -->
+                    <div class="container-fluid">
+                        <!-- begin row -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card card-statistics">
+                                    <div class="card-body">
+                                        <div class="datatable-wrapper table-responsive">
+                                            <div class="page-title mb-2 mb-sm-0">
+                                                <h1 style="text-align: center;">Service List</h1>
+                                            </div>
+                                            <table id="serviceTable" class="display compact table table-striped table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Serial No.</th>
+                                                        <th>Title</th>
+                                                        <th>Description</th>
+                                                        <th>Image</th>
+                                                        <th>Price (INR)</th>
+                                                        <th>Edit</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Tarot Reader</td>
+                                                        <td>Get answers through intuitive tarot card readings.</td>
+                                                        <td><img src="path/to/tarot.jpg" width="60" /></td>
+                                                        <td>500</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Oracle Card Reader</td>
+                                                        <td>Receive divine messages from oracle cards.</td>
+                                                        <td><img src="path/to/oracle.jpg" width="60" /></td>
+                                                        <td>400</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-danger">Disable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Numerology Consultant</td>
+                                                        <td>Understand your life path and destiny through numbers.</td>
+                                                        <td><img src="path/to/numerology.jpg" width="60" /></td>
+                                                        <td>600</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>Name & Mobile Numerology</td>
+                                                        <td>Align your name or mobile number for success and luck.</td>
+                                                        <td><img src="path/to/mobile.jpg" width="60" /></td>
+                                                        <td>350</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>Healer</td>
+                                                        <td>Chakra healing, energy clearing & Ho'oponopono sessions.</td>
+                                                        <td><img src="path/to/healing.jpg" width="60" /></td>
+                                                        <td>700</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-danger">Disable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>Crystals Suggestion</td>
+                                                        <td>Get the right crystals for your energy and goals.</td>
+                                                        <td><img src="path/to/crystals.jpg" width="60" /></td>
+                                                        <td>300</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>Purchase Crystal & Gemstone</td>
+                                                        <td>Buy authentic energized crystals & gemstones.</td>
+                                                        <td><img src="path/to/gemstone.jpg" width="60" /></td>
+                                                        <td>Price Varies</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end container-fluid -->
+                </div>
+                <!-- end app-main -->
+@endsection      

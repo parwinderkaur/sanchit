@@ -1,0 +1,158 @@
+@layout('layouts.master')
+
+@section('title')
+  Reservation Page
+@endsection
+
+@section('content')
+        <!-- title banner start -->
+        <div class="title-banner mb-80">
+            <div class="container-fluid">
+                <div class="banner-wrapper">
+                    <img class="br-32 w-100" src="/media/images/title-banner.jpg" alt="">
+                    <h2 class="wrapper-content">Reservation</h2>
+                </div>
+            </div>
+        </div>
+        <!-- title banner End -->
+
+        <!-- Contact Us section Start -->
+        <section class="contact-sec mb-120 wow fadeInUp" data-wow-delay="690ms">
+            <div class="container-fluid">
+                <div class="row row-gap-4 align-items-stretch h-100">
+                    <div class="col-md-6">
+                        <div class="h-100">
+                            <img class="br-24 object-fit-cover w-100 h-100" src="/media/images/contact-img.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="pl-24">
+                            <div class="mb-36">
+                                <h3 class="fw-700 white mb-8">Reserve A Slot</h3>
+                                <p>Our friendly team would love to hear from you.</p>
+                            </div>
+                            <form class="contact-form" method="post">
+                                <div class="mb-12">
+                                    <p class="subtitle mb-4p white">Name </p>
+                                    <input type="text" name="name" id="fname" class="form-control" required
+                                        placeholder="eg. John">
+                                </div>
+                                <div class="mb-12">
+                                    <p class="subtitle mb-4p white">Email</p>
+                                    <input type="email" name="email" id="email" class="form-control" required
+                                        placeholder="Email">
+                                </div>
+                                <div class="mb-12">
+                                    <p class="subtitle mb-4p white">Contact Number</p>
+                                    <input type="tel" name="phone" id="phone" class="form-control" required
+                                        placeholder="+1 (111) 111 111">
+                                </div>
+                                <div class="mb-12">
+                                    <p class="subtitle white mb-4p">Preferred Time</p>
+                                    <input type="text" id="numberInput" class="form-control" required
+                                        placeholder="10/21/2024">
+                                </div>
+                                <div class="last-block w-100 mb-36">
+                                    <p class="subtitle white mb-4p">Service</p>
+                                    <div class="w-100 drop-container">
+                                        <div class="wrapper-dropdown form-control" id="dropdown-l2">
+                                            <span class="selected-display" id="desation112">Service</span>
+                                            <svg id="drp-arrowe12" xmlns="http://www.w3.org/2000/svg" width="20"
+                                                height="20" viewBox="0 0 20 20" fill="none">
+                                                <path
+                                                    d="M19.7337 4.81165C19.3788 4.45668 18.8031 4.45662 18.4481 4.81171L10.0002 13.2598L1.55191 4.81165C1.19694 4.45668 0.621303 4.45662 0.266273 4.81171C-0.0887576 5.16674 -0.0887576 5.74232 0.266273 6.09735L9.35742 15.1883C9.52791 15.3587 9.75912 15.4545 10.0002 15.4545C10.2413 15.4545 10.4726 15.3587 10.643 15.1882L19.7337 6.09729C20.0888 5.74232 20.0888 5.16668 19.7337 4.81165Z"
+                                                    fill="#92949F" />
+                                            </svg>
+                                            <ul class="topbar-dropdown">
+                                                <li class="item"> Tarot Reading</li>
+                                                <li class="item">Spiritual Guidance and Remedies</li>
+                                                <li class="item"> Palm Reading</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="cus-btn-3 w-100"><span class="text">Submit</span></button>
+                                <div id="message" class="alert-msg"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Us section End -->
+
+        <!-- Blog Section Start -->
+        <section class="blog-sec mb-80 wow fadeInUp" data-wow-delay="690ms">
+            <div class="container-fluid">
+                <div class="heading mb-36">
+                    <div>
+                        <p class="color-sec mb-4p">See what new about your day!</p>
+                        <h3 class="fw-500">Our Latest Insights</h3>
+                    </div>
+                    <a href="{{ route('blogs') }}" class="cus-btn">
+                        <span class="text">View All</span>
+                    </a>
+                </div>
+                <div class="row row-gap-4">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-card">
+                            <a href="{{ route('blog-detail') }}" class="card-img">
+                                <img src="/media/blogs/blog-1.jpg" alt="">
+                            </a>
+                            <div class="card-content">
+                                <p class="white mb-4p">June 01, 2025</p>
+                                <a href="{{ route('blog-detail') }}" class="fw-700 h5 mb-12">Personal Palm Reading</a>
+                                <p class="light-gray mb-20">Lectus nisi quam tellus in eu elementum. Tempus lorem arcu
+                                    quis diam at.
+                                    Massa lacus at
+                                    morbi vel curabitur sed vitae.</p>
+                                <div class="text-end">
+                                    <a href="{{ route('blog-detail') }}"
+                                        class="text-18 hover-content text-decoration-underline">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-card">
+                            <a href="{{ route('blog-detail') }}" class="card-img">
+                                <img src="/media/blogs/blog-2.jpg" alt="blog-2.jpg">
+                            </a>
+                            <div class="card-content">
+                                <p class="white mb-4p">June 03, 2025</p>
+                                <a href="{{ route('blog-detail') }}" class="fw-700 h5 mb-12">Cosmic Insight Chronicles</a>
+                                <p class="light-gray mb-20">Aries individuals are known for their energetic and
+                                    assertive nature, making
+                                    bold and dynamic outfits a perfect match.
+                                </p>
+                                <div class="text-end">
+                                    <a href="{{ route('blog-detail') }}"
+                                        class="text-18 hover-content text-decoration-underline">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-card">
+                            <a href="{{ route('blog-detail') }}" class="card-img">
+                                <img src="/media/blogs/blog-3.jpg" alt="">
+                            </a>
+                            <div class="card-content">
+                                <p class="white mb-4p">June 03, 2025</p>
+                                <a href="{{ route('blog-detail') }}" class="fw-700 h5 mb-12">Self-Growth with Astrology</a>
+                                <p class="light-gray mb-20">Incorporate astrology into everyday activities, from
+                                    planning your day
+                                    around the moon phase to using planetary.</p>
+                                <div class="text-end">
+                                    <a href="{{ route('blog-detail') }}"
+                                        class="text-18 hover-content text-decoration-underline">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section End -->
+  @endsection

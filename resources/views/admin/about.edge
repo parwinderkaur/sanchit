@@ -1,0 +1,85 @@
+@layout('layouts.admin-master')
+
+@section('title')
+  Admin About
+@endsection
+
+@section('content')      
+                <!-- begin app-main -->
+                <div class="app-main" id="main">
+                    <!-- begin container-fluid -->
+                    <div class="container-fluid">
+                        <!-- begin row -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card card-statistics">
+                                    <div class="card-body">
+                                        <div class="datatable-wrapper table-responsive">
+                                            <div class="page-title mb-2 mb-sm-0">
+                                                <h1 style="text-align: center;">About Section List</h1>
+                                            </div>
+                                            <table id="aboutTable" class="display compact table table-striped table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Serial No.</th>
+                                                        <th>Paragraph No.</th>
+                                                        <th>Description</th>
+                                                        <th>Image</th>
+                                                        <th>Edit</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Paragraph 1</td>
+                                                        <td>Welcome to our healing journey, where ancient wisdom meets modern wellness.</td>
+                                                        <td><img src="/media/images/about-img.png" width="50" height="50" /></td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Paragraph 2</td>
+                                                        <td>Our goal is to provide personalized healing through crystals, tarot, and meditation.</td>
+                                                        <td><img src="/media/images/about-img-3.png" width="50" height="50" /></td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-danger">Disable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Small Paragraph 3</td>
+                                                        <td>We believe in holistic wellness that aligns the body, mind, and soul.</td>
+                                                        <td><img src="/media/vector/cunsulation.png" width="50" height="50" /></td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>Small Paragraph 4</td>
+                                                        <td>With years of spiritual experience, we curate solutions just for you.</td>
+                                                        <td><img src="/media/vector/personal-advice.png" width="50" height="50" /></td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-danger">Disable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>Small Paragraph 5</td>
+                                                        <td>Thank you for trusting us on your path to balance and self-discovery.</td>
+                                                        <td><img src="/media/vector/career.png" width="50" height="50" /></td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end container-fluid -->
+                </div>
+                <!-- end app-main -->
+@endsection      

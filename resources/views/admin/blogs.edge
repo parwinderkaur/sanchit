@@ -1,0 +1,128 @@
+@layout('layouts.admin-master')
+
+@section('title')
+  Admin Blogs
+@endsection
+
+@section('content')      
+                <!-- begin app-main -->
+                <div class="app-main" id="main">
+                    <!-- begin container-fluid -->
+                    <div class="container-fluid">
+                        <!-- begin row -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card card-statistics">
+                                    <div class="card-body">
+                                        <div class="datatable-wrapper table-responsive">
+                                            <div class="page-title mb-2 mb-sm-0">
+                                                <h1 style="text-align: center;">Blog List</h1>
+                                            </div>
+                                            <table id="blogTable" class="display compact table table-striped table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Serial No.</th>
+                                                        <th>Title</th>
+                                                        <th>Image</th>
+                                                        <th>Date of Post</th>
+                                                        <th>Description</th>
+                                                        <th>Edit</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Full Moon Rituals</td>
+                                                        <td><img src="/media/blogs/blog-1.jpg" alt="Blog 1" width="60" height="60"></td>
+                                                        <td>2025-04-05</td>
+                                                        <td>Explore powerful full moon rituals to release old energies.</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Crystal Grids for Manifestation</td>
+                                                        <td><img src="/media/blogs/blog-2.jpg" alt="Blog 2" width="60" height="60"></td>
+                                                        <td>2025-04-01</td>
+                                                        <td>Create sacred crystal grids to attract your desires.</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-danger">Disable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Signs You Are a Starseed</td>
+                                                        <td><img src="/media/blogs/blog-3.jpg" alt="Blog 3" width="60" height="60"></td>
+                                                        <td>2025-03-28</td>
+                                                        <td>Identify starseed traits and soul missions.</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>Benefits of Reiki Healing</td>
+                                                        <td><img src="/media/blogs/blog-4.jpg" alt="Blog 4" width="60" height="60"></td>
+                                                        <td>2025-03-20</td>
+                                                        <td>How Reiki helps balance body, mind, and spirit.</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>Tarot for Daily Guidance</td>
+                                                        <td><img src="/media/blogs/blog-5.jpg" alt="Blog 5" width="60" height="60"></td>
+                                                        <td>2025-03-15</td>
+                                                        <td>Use tarot cards for intuitive daily messages.</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-danger">Disable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>Akashic Records Meditation</td>
+                                                        <td><img src="/media/blogs/blog-6.jpg" alt="Blog 6" width="60" height="60"></td>
+                                                        <td>2025-03-10</td>
+                                                        <td>Tap into your soul’s history and heal past lives.</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>Working with Spirit Guides</td>
+                                                        <td><img src="/media/blogs/blog-7.jpg" alt="Blog 7" width="60" height="60"></td>
+                                                        <td>2025-03-05</td>
+                                                        <td>Learn to connect and receive guidance from your spirit team.</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td>Chakra Healing Techniques</td>
+                                                        <td><img src="/media/blogs/blog-8.jpg" alt="Blog 8" width="60" height="60"></td>
+                                                        <td>2025-03-01</td>
+                                                        <td>Balance and align your energy centers effectively.</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-danger">Disable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>9</td>
+                                                        <td>Protection Rituals for Empaths</td>
+                                                        <td><img src="/media/blogs/blog-9.jpg" alt="Blog 9" width="60" height="60"></td>
+                                                        <td>2025-02-25</td>
+                                                        <td>Shield your energy from negativity and psychic drain.</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end container-fluid -->
+                </div>
+                <!-- end app-main -->
+@endsection      

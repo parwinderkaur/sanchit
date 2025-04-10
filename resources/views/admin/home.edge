@@ -1,0 +1,92 @@
+@layout('layouts.admin-master')
+
+@section('title')
+  Admin Home
+@endsection
+
+@section('content')      
+                <!-- begin app-main -->
+                <div class="app-main" id="main">
+                    <!-- begin container-fluid -->
+                    <div class="container-fluid">
+                        <!-- begin row -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card card-statistics">
+                                    <div class="card-body">
+                                        <div class="datatable-wrapper table-responsive">
+                                            <div class="page-title mb-2 mb-sm-0">
+                                                <h1 style="text-align: center;">Home Section List</h1>
+                                            </div>
+                                            <table id="homeSectionTable" class="display compact table table-striped table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Serial No.</th>
+                                                        <th>Title</th>
+                                                        <th>Paragraph No.</th>
+                                                        <th>Description</th>
+                                                        <th>Image</th>
+                                                        <th>Edit</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Welcome to Crystals Healing Vibes</td>
+                                                        <td>1</td>
+                                                        <td>Experience spiritual clarity and healing with ancient crystals and divine energy work.</td>
+                                                        <td><img src="/media/images/hero-img.png" width="60" /></td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Our Vision</td>
+                                                        <td>2</td>
+                                                        <td>To guide every seeker toward light, balance, and inner peace using holistic tools.</td>
+                                                        <td><img src="/media/images/about-img.png" width="60" /></td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-danger">Disable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Meet Your Healer</td>
+                                                        <td>3</td>
+                                                        <td>Led by an experienced lightworker and tarot reader with years of intuitive service.</td>
+                                                        <td><img src="/media/vector/cunsulation.png" width="60" /></td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>Why Choose Us</td>
+                                                        <td>4</td>
+                                                        <td>Personalized readings, chakra alignment, and genuine guidance every step of your journey.</td>
+                                                        <td><img src="/media/vector/personal-advice.png" width="60" /></td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-danger">Disable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>Start Your Healing</td>
+                                                        <td>5</td>
+                                                        <td>Book a session or explore our crystal kits to begin your transformation today.</td>
+                                                        <td><img src="/media/vector/career.png" width="60" /></td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end container-fluid -->
+                </div>
+                <!-- end app-main -->
+@endsection      

@@ -1,0 +1,80 @@
+@layout('layouts.admin-master')
+
+@section('title')
+  Admin FAQ
+@endsection
+
+@section('content')      
+                <!-- begin app-main -->
+                <div class="app-main" id="main">
+                    <!-- begin container-fluid -->
+                    <div class="container-fluid">
+                        <!-- begin row -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card card-statistics">
+                                    <div class="card-body">
+                                        <div class="datatable-wrapper table-responsive">
+                                            <div class="page-title mb-2 mb-sm-0">
+                                                <h1 style="text-align: center;">Frequently Asked Questions</h1>
+                                            </div>
+                                            <table id="faqTable" class="display compact table table-striped table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Serial No.</th>
+                                                        <th>Title</th>
+                                                        <th>Description</th>
+                                                        <th>Edit</th>
+                                                        <th>Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>What is tarot reading?</td>
+                                                        <td>Tarot is a form of divination using cards to gain insight into past, present, or future.</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Is healing safe?</td>
+                                                        <td>Yes, healing practices are natural and safe, focusing on energy balance.</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-danger">Disable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Do I need to believe in crystals?</td>
+                                                        <td>Belief helps, but crystals carry natural energies that benefit everyone.</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>Can I ask personal questions?</td>
+                                                        <td>Yes, all sessions are confidential and personalized to your concerns.</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-danger">Disable</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>How often should I take a session?</td>
+                                                        <td>It depends on your personal journey, most take monthly or as needed.</td>
+                                                        <td><button class="btn btn-sm btn-primary">Edit</button></td>
+                                                        <td><button class="btn btn-sm btn-success">Enable</button></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+                    </div>
+                    <!-- end container-fluid -->
+                </div>
+                <!-- end app-main -->
+@endsection      

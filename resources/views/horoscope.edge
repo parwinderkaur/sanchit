@@ -1,0 +1,203 @@
+@layout('layouts.master')
+
+@section('title')
+  Horoscope Page
+@endsection
+
+@section('content')
+        <!-- title banner start -->
+        <div class="title-banner mb-80">
+            <div class="container-fluid">
+                <div class="banner-wrapper">
+                    <img class="br-32 w-100" src="/media/images/title-banner.jpg" alt="">
+                    <h2 class="wrapper-content">Horoscope</h2>
+                </div>
+            </div>
+        </div>
+        <!-- title banner End -->
+
+        <!-- Daily Horoscope Section Start -->
+        <section class="horoscope-sec mb-96">
+            <div class="container-fluid">
+                <div class="heading mb-36">
+                    <div>
+                        <p class="color-sec">See what new about your day!</p>
+                        <h3>Daily Horoscope</h3>
+                    </div>
+                </div>
+                <div class="row row-gap-4 align-items-center">
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="{{ route('horoscope-detail') }}" class="horoscope-block m-0">
+                            <img src="/media/horoscope/vector-1.png" alt="">
+                            <span class="h5 fw-700">ARIES </span>
+                            <span class="subtitle lightest-gray">March 21 - April 19</span>
+                            <span class="text-18 hover-content text-decoration-underline">Read More</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="{{ route('horoscope-detail') }}" class="horoscope-block m-0">
+                            <img src="/media/horoscope/vector-2.png" alt="">
+                            <span class="h5 fw-700">TAURUS</span>
+                            <span class="subtitle lightest-gray">April 20 - May 20</span>
+                            <span class="text-18 hover-content text-decoration-underline">Read More</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="{{ route('horoscope-detail') }}" class="horoscope-block m-0">
+                            <img src="/media/horoscope/vector-3.png" alt="">
+                            <span class="h5 fw-700">GEMINI</span>
+                            <span class="subtitle lightest-gray">May 21 - June 20</span>
+                            <span class="text-18 hover-content text-decoration-underline">Read More</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="{{ route('horoscope-detail') }}" class="horoscope-block m-0">
+                            <img src="/media/horoscope/vector-4.png" alt="">
+                            <span class="h5 fw-700">CANCER</span>
+                            <span class="subtitle lightest-gray">June 22 - July 22</span>
+                            <span class="text-18 hover-content text-decoration-underline">Read More</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="{{ route('horoscope-detail') }}" class="horoscope-block m-0">
+                            <img src="/media/horoscope/vector-5.png" alt="">
+                            <span class="h5 fw-700">LEO</span>
+                            <span class="subtitle lightest-gray">June 22 - July 22</span>
+                            <span class="text-18 hover-content text-decoration-underline">Read More</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="{{ route('horoscope-detail') }}" class="horoscope-block m-0">
+                            <img src="/media/horoscope/vector-6.png" alt="">
+                            <span class="h5 fw-700">VIRGO</span>
+                            <span class="subtitle lightest-gray">March 21 - April 19</span>
+                            <span class="text-18 hover-content text-decoration-underline">Read More</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="{{ route('horoscope-detail') }}" class="horoscope-block m-0">
+                            <img src="/media/horoscope/vector-7.png" alt="">
+                            <span class="h5 fw-700">LIBRA</span>
+                            <span class="subtitle lightest-gray">April 20 - May 20</span>
+                            <span class="text-18 hover-content text-decoration-underline">Read More</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="{{ route('horoscope-detail') }}" class="horoscope-block m-0">
+                            <img src="/media/horoscope/vector-8.png" alt="">
+                            <span class="h5 fw-700">SCORPIO</span>
+                            <span class="subtitle lightest-gray">May 21 - June 20</span>
+                            <span class="text-18 hover-content text-decoration-underline">Read More</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="{{ route('horoscope-detail') }}" class="horoscope-block m-0">
+                            <img src="/media/horoscope/vector-9.png" alt="">
+                            <span class="h5 fw-700">SAGITARIUS</span>
+                            <span class="subtitle lightest-gray">June 22 - July 22</span>
+                            <span class="text-18 hover-content text-decoration-underline">Read More</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="{{ route('horoscope-detail') }}" class="horoscope-block m-0">
+                            <img src="/media/horoscope/vector-10.png" alt="">
+                            <span class="h5 fw-700">CAPRICORN</span>
+                            <span class="subtitle lightest-gray">March 21 - April 19</span>
+                            <span class="text-18 hover-content text-decoration-underline">Read More</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="{{ route('horoscope-detail') }}" class="horoscope-block m-0">
+                            <img src="/media/horoscope/vector-11.png" alt="">
+                            <span class="h5 fw-700">AQUARIUS</span>
+                            <span class="subtitle lightest-gray">April 20 - May 20</span>
+                            <span class="text-18 hover-content text-decoration-underline">Read More</span>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="{{ route('horoscope-detail') }}" class="horoscope-block m-0">
+                            <img src="/media/horoscope/vector-12.png" alt="">
+                            <span class="h5 fw-700">PISCES </span>
+                            <span class="subtitle lightest-gray">May 21 - June 20</span>
+                            <span class="text-18 hover-content text-decoration-underline">Read More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Daily Horoscope Section End -->
+
+        <!-- Blog Section Start -->
+        <section class="blog-sec mb-80">
+            <div class="container-fluid">
+                <div class="heading mb-36">
+                    <div>
+                        <p class="color-sec mb-4p">See what new about your day!</p>
+                        <h3 class="fw-500">Our Latest Insights</h3>
+                    </div>
+                    <a href="{{ route('blogs') }}" class="cus-btn">
+                        <span class="text">View All</span>
+                    </a>
+                </div>
+                <div class="row row-gap-4">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-card">
+                            <a href="{{ route('blog-detail') }}" class="card-img">
+                                <img src="/media/blogs/blog-1.jpg" alt="">
+                            </a>
+                            <div class="card-content">
+                                <p class="white mb-4p">June 01, 2025</p>
+                                <a href="{{ route('blog-detail') }}" class="fw-700 h5 mb-12">Personal Palm Reading</a>
+                                <p class="light-gray mb-20">Lectus nisi quam tellus in eu elementum. Tempus lorem arcu
+                                    quis diam at.
+                                    Massa lacus at
+                                    morbi vel curabitur sed vitae.</p>
+                                <div class="text-end">
+                                    <a href="{{ route('blog-detail') }}"
+                                        class="text-18 hover-content text-decoration-underline">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-card">
+                            <a href="{{ route('blog-detail') }}" class="card-img">
+                                <img src="/media/blogs/blog-2.jpg" alt="blog-2.jpg">
+                            </a>
+                            <div class="card-content">
+                                <p class="white mb-4p">June 03, 2025</p>
+                                <a href="{{ route('blog-detail') }}" class="fw-700 h5 mb-12">Cosmic Insight Chronicles</a>
+                                <p class="light-gray mb-20">Aries individuals are known for their energetic and
+                                    assertive nature, making
+                                    bold and dynamic outfits a perfect match.
+                                </p>
+                                <div class="text-end">
+                                    <a href="{{ route('blog-detail') }}"
+                                        class="text-18 hover-content text-decoration-underline">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="blog-card">
+                            <a href="{{ route('blog-detail') }}" class="card-img">
+                                <img src="/media/blogs/blog-3.jpg" alt="">
+                            </a>
+                            <div class="card-content">
+                                <p class="white mb-4p">June 03, 2025</p>
+                                <a href="{{ route('blog-detail') }}" class="fw-700 h5 mb-12">Self-Growth with Astrology</a>
+                                <p class="light-gray mb-20">Incorporate astrology into everyday activities, from
+                                    planning your day
+                                    around the moon phase to using planetary.</p>
+                                <div class="text-end">
+                                    <a href="{{ route('blog-detail') }}"
+                                        class="text-18 hover-content text-decoration-underline">See Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Section End -->
+  @endsection
