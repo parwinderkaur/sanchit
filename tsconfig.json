@@ -1,5 +1,4 @@
 {
-  "extends": "adonis-preset-ts/tsconfig.json",
   "include": [
     "**/*"
   ],
@@ -8,6 +7,9 @@
     "build"
   ],
   "compilerOptions": {
+    "target": "ES2021",
+    "module": "CommonJS",
+    "moduleResolution": "node",
     "outDir": "build",
     "rootDir": "./",
     "baseUrl": "./",
@@ -16,26 +18,17 @@
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
     "paths": {
-      "App/*": [
-        "./app/*"
-      ],
-      "Config/*": [
-        "./config/*"
-      ],
-      "Contracts/*": [
-        "./contracts/*"
-      ],
-      "Database/*": [
-        "./database/*"
-      ]
+      "App/*": ["./app/*"],
+      "Config/*": ["./config/*"],
+      "Contracts/*": ["./contracts/*"],
+      "Database/*": ["./database/*"]
     },
     "types": [
       "@adonisjs/core",
       "@adonisjs/repl",
       "@adonisjs/session",
       "@adonisjs/view",
-      "@adonisjs/shield",
-      "@japa/preset-adonis/build/adonis-typings"
+      "@adonisjs/shield"
     ]
   }
 }
