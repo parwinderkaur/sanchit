@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "node ace serve --watch",
-    "build": "ls -la && tsc",
-    "start": "ls -la && node build/server.js",
+    "build": "tsc && cp .adonisrc.json build/.adonisrc.json",
+  "start": "node build/server.js",
     "test": "node ace test"
   },
   "devDependencies": {
