@@ -20,7 +20,9 @@
       "App/*": ["./app/*"],
       "Config/*": ["./config/*"],
       "Contracts/*": ["./contracts/*"],
-      "Database/*": ["./database/*"]
+      "Database/*": ["./database/*"],
+      "@/*": ["app/*"],
+      "@ioc/*": ["node_modules/@adonisjs/*"]
     },
     "types": [
       "@adonisjs/core",
