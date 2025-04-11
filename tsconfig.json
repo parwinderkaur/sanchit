@@ -1,11 +1,7 @@
 {
   "include": [
     "**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "build"
-  ],
+  ],"exclude": ["test.ts", "tests", "contracts"],
   "compilerOptions": {
     "target": "ES2021",
     "module": "CommonJS",
