@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "node ace serve --watch",
-    "build": "tsc && cp .adonisrc.json build/.adonisrc.json",
+    "build": "node ace build --production",
   "start": "node build/server.js",
     "test": "node ace test"
   },
