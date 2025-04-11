@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: occult-project
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: "npm install && node ace build --production"
+    startCommand: "node server.js"
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
+      - key: APP_KEY
+        value: SQwYwhTLu5W_5vuXICOivT45axHLWEri
+      - key: DRIVE_DISK
+        value: local
+      - key: SESSION_DRIVER
+        value: cookie
+      - key: CACHE_VIEWS
+        value: false
+      - key: APP_NAME
+        value: OccultProject
