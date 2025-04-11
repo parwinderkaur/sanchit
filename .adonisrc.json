@@ -1,5 +1,15 @@
 {
   "typescript": true,
+  "directories": {
+    "app": "app",
+    "config": "config",
+    "contracts": "contracts",
+    "database": "database",
+    "public": "public",
+    "resources": "resources",
+    "providers": "providers",
+    "start": "start"
+  },
   "commands": [
     "./commands",
     "@adonisjs/core/build/commands/index.js",
@@ -36,7 +46,8 @@
     }
   ],
   "aceProviders": [
-    "@adonisjs/repl"
+    "@adonisjs/repl",
+    "@adonisjs/assembler"
   ],
   "tests": {
     "suites": [
