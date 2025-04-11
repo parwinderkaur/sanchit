@@ -1,8 +1,11 @@
 {
   "include": [
     "**/*"
-  ],"exclude": ["test.ts", "tests", "contracts"],
+  ],
+  "exclude": ["test.ts", "tests", "contracts", "build", "node_modules"],
   "compilerOptions": {
+    "skipLibCheck": true,
+    "strict": false,
     "target": "ES2021",
     "module": "CommonJS",
     "moduleResolution": "node",
