@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "node ace serve --watch",
-    "build": "node ace build --production",
+    "build": "tsc",
     "start": "node server.js",
     "test": "node ace test"
   },
@@ -17,7 +17,7 @@
     "@types/source-map-support": "^0.5.10",
     "adonis-preset-ts": "^2.1.0",
     "pino-pretty": "^13.0.0",
-    "typescript": "^5.3.3",
+    "typescript": "^5.8.3",
     "youch": "^3.3.4",
     "youch-terminal": "^2.2.3"
   },
